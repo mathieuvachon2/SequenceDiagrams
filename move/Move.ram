@@ -471,7 +471,7 @@
                   <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Ynk90SQqEemjzbjDK0fmYQ" covered="_B9APQCH5Eemk5dFcv_z3LQ" message="_YnmzACQqEemjzbjDK0fmYQ"/>
                   <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k_euoCQqEemjzbjDK0fmYQ" covered="_q7AslCHzEemk5dFcv_z3LQ" message="_k_hK4CQqEemjzbjDK0fmYQ"/>
                   <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k_euoSQqEemjzbjDK0fmYQ" covered="_k_R6UCQqEemjzbjDK0fmYQ" message="_k_hK4CQqEemjzbjDK0fmYQ"/>
-                  <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_AfwpQiQqEemjzbjDK0fmYQ" body="hasRealVictim == true" language="java"/>
+                  <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_AfwpQiQqEemjzbjDK0fmYQ" body="hasRealVictim " language="java"/>
                 </operands>
               </fragments>
               <fragments xsi:type="ram:CombinedFragment" xmi:id="_G9KxkCQqEemjzbjDK0fmYQ" covered="_q7AslCHzEemk5dFcv_z3LQ _B9APQCH5Eemk5dFcv_z3LQ">
@@ -809,7 +809,7 @@
   <layout xmi:id="_SJZdzCAqEemR5JUXTCNAMw">
     <containers xmi:id="_SJZdzSAqEemR5JUXTCNAMw" key="_SJZdwSAqEemR5JUXTCNAMw">
       <value xmi:id="_T8nH0CAqEemR5JUXTCNAMw" key="_T8l5sCAqEemR5JUXTCNAMw">
-        <value xmi:id="_T8nH0SAqEemR5JUXTCNAMw" x="587.0137" y="162.00046"/>
+        <value xmi:id="_T8nH0SAqEemR5JUXTCNAMw" x="343.2444" y="228.50003"/>
       </value>
       <value xmi:id="_OYE1gCBcEem2Hr4wcman3w" key="_OYBLICBcEem2Hr4wcman3w">
         <value xmi:id="_OYE1gSBcEem2Hr4wcman3w" x="752.99976" y="479.5"/>
