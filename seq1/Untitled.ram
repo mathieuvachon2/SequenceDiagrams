@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_UJ0v8CcmEemFrOINnDyY5g" name="s1">
+  <coreConcern href="Seq1.core#_7Em70CchEemFrOINnDyY5g"/>
+  <structuralView xmi:id="_UJ0v8ScmEemFrOINnDyY5g">
+    <classes xsi:type="ram:Class" xmi:id="_D2K-cCcqEemFrOINnDyY5g" name="Player">
+      <operations xmi:id="_MOy2QCcqEemFrOINnDyY5g" name="createNewPlayer" extendedVisibility="private" returnType="_UJ0v8ycmEemFrOINnDyY5g"/>
+      <operations xmi:id="_Ms2OwCcrEemFrOINnDyY5g" name="setStatus" extendedVisibility="private" returnType="_UJ0v8ycmEemFrOINnDyY5g">
+        <parameters xmi:id="_Ms2OwScrEemFrOINnDyY5g" name="status" type="_D8NfkCcrEemFrOINnDyY5g"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_WCioQCcqEemFrOINnDyY5g" name="Game">
+      <operations xmi:id="_acV6ECcqEemFrOINnDyY5g" name="createNewFamily" extendedVisibility="private" returnType="_UJ0v8ycmEemFrOINnDyY5g">
+        <parameters xmi:id="_acV6EScqEemFrOINnDyY5g" name="numOfPlayers" type="_UJ0v9icmEemFrOINnDyY5g"/>
+      </operations>
+      <operations xmi:id="_da7LECcqEemFrOINnDyY5g" name="createNewGame" extendedVisibility="private" returnType="_UJ0v8ycmEemFrOINnDyY5g"/>
+      <operations xmi:id="_jhKJgCcqEemFrOINnDyY5g" name="setNumPlayers" extendedVisibility="private" returnType="_UJ0v8ycmEemFrOINnDyY5g">
+        <parameters xmi:id="_jhKJgScqEemFrOINnDyY5g" name="numPlayers" type="_UJ0v9icmEemFrOINnDyY5g"/>
+      </operations>
+      <operations xmi:id="_w8V8QCcqEemFrOINnDyY5g" name="setStatus" extendedVisibility="private" returnType="_UJ0v8ycmEemFrOINnDyY5g">
+        <parameters xmi:id="_w8V8QScqEemFrOINnDyY5g" name="gameState" type="_oEzT0CcqEemFrOINnDyY5g"/>
+      </operations>
+      <operations xmi:id="_BII1cCcrEemFrOINnDyY5g" name="setRules" extendedVisibility="private" returnType="_UJ0v8ycmEemFrOINnDyY5g">
+        <parameters xmi:id="_BII1cScrEemFrOINnDyY5g" name="kind" type="_2GjXUCcqEemFrOINnDyY5g"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_7_CYMCcrEemtP78Mp75tpg" name="Tile">
+      <operations xmi:id="_qnu4sCcsEemtP78Mp75tpg" name="createNewSpace" extendedVisibility="private" returnType="_7_CYMCcrEemtP78Mp75tpg">
+        <parameters xmi:id="_qnu4sScsEemtP78Mp75tpg" name="tileKind" type="_2_et8CcrEemtP78Mp75tpg"/>
+        <parameters xmi:id="_qnu4sicsEemtP78Mp75tpg" name="xPos" type="_UJ0v9icmEemFrOINnDyY5g"/>
+        <parameters xmi:id="_qnu4sycsEemtP78Mp75tpg" name="yPos" type="_UJ0v9icmEemFrOINnDyY5g"/>
+      </operations>
+      <operations xmi:id="_uxkb4CcsEemtP78Mp75tpg" name="connectSpaceToNeighbours" extendedVisibility="private" returnType="_UJ0v8ycmEemFrOINnDyY5g"/>
+      <operations xmi:id="_xVoUECcsEemtP78Mp75tpg" name="setNextPlacementRelationship" extendedVisibility="private" returnType="_UJ0v8ycmEemFrOINnDyY5g"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_PQ_UkCctEemtP78Mp75tpg" name="Wall">
+      <operations xmi:id="__le9oCcvEemtP78Mp75tpg" name="createNewWall" extendedVisibility="private" returnType="_PQ_UkCctEemtP78Mp75tpg">
+        <parameters xmi:id="_aol-oCcwEemtP78Mp75tpg" name="adjacentTiles" type="_U6pkYCcwEemtP78Mp75tpg"/>
+        <parameters xmi:id="__le9oicvEemtP78Mp75tpg" name="status" type="_fQ5G0CctEemtP78Mp75tpg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_NRWQsCcwEemtP78Mp75tpg" name="Door">
+      <operations xmi:id="_U6qLcCcwEemtP78Mp75tpg" name="createNewDoor" extendedVisibility="private" returnType="_NRWQsCcwEemtP78Mp75tpg">
+        <parameters xmi:id="_U6qLcScwEemtP78Mp75tpg" name="adjacentTiles" type="_U6pkYCcwEemtP78Mp75tpg"/>
+      </operations>
+      <operations xmi:id="_q-43oCcwEemtP78Mp75tpg" name="setDoorStatus" extendedVisibility="private" returnType="_UJ0v8ycmEemFrOINnDyY5g">
+        <parameters xmi:id="_q-43oScwEemtP78Mp75tpg" name="doorStatus" type="_HMcH8CcwEemtP78Mp75tpg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_tTKAUCcwEemtP78Mp75tpg" name="ParkingSpace">
+      <operations xmi:id="_4kZEACcwEemtP78Mp75tpg" name="createParkingSpace" extendedVisibility="private" returnType="_tTKAUCcwEemtP78Mp75tpg">
+        <parameters xmi:id="_4kZEAScwEemtP78Mp75tpg" name="tiles" type="_4kYc8CcwEemtP78Mp75tpg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_l_cssCcxEemtP78Mp75tpg" name="Fireman">
+      <operations xmi:id="_1RKRUCczEemtP78Mp75tpg" name="createFireman" extendedVisibility="private" returnType="_l_cssCcxEemtP78Mp75tpg">
+        <parameters xmi:id="_1RKRUSczEemtP78Mp75tpg" name="color" type="_QD6CcCcxEemtP78Mp75tpg"/>
+        <parameters xmi:id="_1RKRUiczEemtP78Mp75tpg" name="gameKind" type="_2GjXUCcqEemFrOINnDyY5g"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_vFfEICcxEemtP78Mp75tpg" name="Victim">
+      <operations xmi:id="_y7VUUCcxEemtP78Mp75tpg" name="createVictim" extendedVisibility="private" returnType="_vFfEICcxEemtP78Mp75tpg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_aq8nsCczEemtP78Mp75tpg" name="FalseAlarm">
+      <operations xmi:id="_eRlXMCczEemtP78Mp75tpg" name="createFalseAlarm" extendedVisibility="private" returnType="_UJ0v8ycmEemFrOINnDyY5g"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_UJ0v8ycmEemFrOINnDyY5g"/>
+    <types xsi:type="ram:RAny" xmi:id="_UJ0v9CcmEemFrOINnDyY5g"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_UJ0v9ScmEemFrOINnDyY5g"/>
+    <types xsi:type="ram:RInt" xmi:id="_UJ0v9icmEemFrOINnDyY5g"/>
+    <types xsi:type="ram:RChar" xmi:id="_UJ0v9ycmEemFrOINnDyY5g"/>
+    <types xsi:type="ram:RString" xmi:id="_UJ0v-CcmEemFrOINnDyY5g"/>
+    <types xsi:type="ram:RDouble" xmi:id="_UJ0v-ScmEemFrOINnDyY5g"/>
+    <types xsi:type="ram:RFloat" xmi:id="_UJ0v-icmEemFrOINnDyY5g"/>
+    <types xsi:type="ram:RLong" xmi:id="_UJ0v-ycmEemFrOINnDyY5g"/>
+    <types xsi:type="ram:RByte" xmi:id="_UJ0v_CcmEemFrOINnDyY5g"/>
+    <types xsi:type="ram:REnum" xmi:id="_oEzT0CcqEemFrOINnDyY5g" name="GameState">
+      <literals xmi:id="_r8EgUCcqEemFrOINnDyY5g" name="ReadyToJoin"/>
+    </types>
+    <types xsi:type="ram:REnum" xmi:id="_2GjXUCcqEemFrOINnDyY5g" name="GameKind">
+      <literals xmi:id="_8EKlQCcqEemFrOINnDyY5g" name="Family"/>
+    </types>
+    <types xsi:type="ram:REnum" xmi:id="_D8NfkCcrEemFrOINnDyY5g" name="PlayerStatus">
+      <literals xmi:id="_G2vXACcrEemFrOINnDyY5g" name="Available"/>
+    </types>
+    <types xsi:type="ram:REnum" xmi:id="_2_et8CcrEemtP78Mp75tpg" name="TileKind">
+      <literals xmi:id="_5VHvoCcrEemtP78Mp75tpg" name="Indoor"/>
+      <literals xmi:id="_6Z4YQCcrEemtP78Mp75tpg" name="Outdoor"/>
+    </types>
+    <types xsi:type="ram:REnum" xmi:id="_fQ5G0CctEemtP78Mp75tpg" name="WallStatus">
+      <literals xmi:id="_hjIPMCctEemtP78Mp75tpg" name="Intact"/>
+    </types>
+    <types xsi:type="ram:REnum" xmi:id="_HMcH8CcwEemtP78Mp75tpg" name="DoorStatus">
+      <literals xmi:id="_KyUpgCcwEemtP78Mp75tpg" name="Open"/>
+      <literals xmi:id="_LilBwCcwEemtP78Mp75tpg" name="Close"/>
+    </types>
+    <types xsi:type="ram:RArray" xmi:id="_U6pkYCcwEemtP78Mp75tpg" type="_7_CYMCcrEemtP78Mp75tpg"/>
+    <types xsi:type="ram:RArray" xmi:id="_4kYc8CcwEemtP78Mp75tpg"/>
+    <types xsi:type="ram:REnum" xmi:id="_QD6CcCcxEemtP78Mp75tpg" name="Color">
+      <literals xmi:id="_Sq2PgCcxEemtP78Mp75tpg" name="Red"/>
+      <literals xmi:id="_Tl7XsCcxEemtP78Mp75tpg" name="Blue"/>
+      <literals xmi:id="_YQykUCcxEemtP78Mp75tpg" name="Yellow"/>
+      <literals xmi:id="_ZQqF4CcxEemtP78Mp75tpg" name="Green"/>
+      <literals xmi:id="_a4zIYCcxEemtP78Mp75tpg" name="White"/>
+      <literals xmi:id="_bu30wCcxEemtP78Mp75tpg" name="Orange"/>
+    </types>
+  </structuralView>
+  <layout xmi:id="_UJ3MMCcmEemFrOINnDyY5g">
+    <containers xmi:id="_UJ3MMScmEemFrOINnDyY5g" key="_UJ0v8ScmEemFrOINnDyY5g">
+      <value xmi:id="_D2OBwCcqEemFrOINnDyY5g" key="_D2K-cCcqEemFrOINnDyY5g">
+        <value xmi:id="_D2OBwScqEemFrOINnDyY5g" x="266.0001" y="176.0"/>
+      </value>
+      <value xmi:id="_WClEgCcqEemFrOINnDyY5g" key="_WCioQCcqEemFrOINnDyY5g">
+        <value xmi:id="_WClEgScqEemFrOINnDyY5g" x="620.00006" y="151.0"/>
+      </value>
+      <value xmi:id="_oFZwwCcqEemFrOINnDyY5g" key="_oEzT0CcqEemFrOINnDyY5g">
+        <value xmi:id="_oFZwwScqEemFrOINnDyY5g" x="59.777164" y="104.976456"/>
+      </value>
+      <value xmi:id="_2GlMgCcqEemFrOINnDyY5g" key="_2GjXUCcqEemFrOINnDyY5g">
+        <value xmi:id="_2GlMgScqEemFrOINnDyY5g" x="59.77716" y="204.5"/>
+      </value>
+      <value xmi:id="_D8PUwCcrEemFrOINnDyY5g" key="_D8NfkCcrEemFrOINnDyY5g">
+        <value xmi:id="_D8PUwScrEemFrOINnDyY5g" x="59.839844" y="334.49997"/>
+      </value>
+      <value xmi:id="_2_hKMCcrEemtP78Mp75tpg" key="_2_et8CcrEemtP78Mp75tpg">
+        <value xmi:id="_2_hKMScrEemtP78Mp75tpg" x="59.77716" y="432.00018"/>
+      </value>
+      <value xmi:id="_7_GCkCcrEemtP78Mp75tpg" key="_7_CYMCcrEemtP78Mp75tpg">
+        <value xmi:id="_7_GCkScrEemtP78Mp75tpg" x="832.89746" y="419.1954"/>
+      </value>
+      <value xmi:id="_PRC-8CctEemtP78Mp75tpg" key="_PQ_UkCctEemtP78Mp75tpg">
+        <value xmi:id="_PRC-8SctEemtP78Mp75tpg" x="827.89746" y="567.4998"/>
+      </value>
+      <value xmi:id="_fQ8KICctEemtP78Mp75tpg" key="_fQ5G0CctEemtP78Mp75tpg">
+        <value xmi:id="_fQ8KISctEemtP78Mp75tpg" x="59.77716" y="569.9998"/>
+      </value>
+      <value xmi:id="_HMgZYCcwEemtP78Mp75tpg" key="_HMcH8CcwEemtP78Mp75tpg">
+        <value xmi:id="_HMgZYScwEemtP78Mp75tpg" x="294.0" y="33.272797"/>
+      </value>
+      <value xmi:id="_NRZ7ECcwEemtP78Mp75tpg" key="_NRWQsCcwEemtP78Mp75tpg">
+        <value xmi:id="_NRZ7EScwEemtP78Mp75tpg" x="664.8975" y="31.772797"/>
+      </value>
+      <value xmi:id="_tTORwCcwEemtP78Mp75tpg" key="_tTKAUCcwEemtP78Mp75tpg">
+        <value xmi:id="_tTORwScwEemtP78Mp75tpg" x="213.50009" y="331.69287"/>
+      </value>
+      <value xmi:id="_QD_iACcxEemtP78Mp75tpg" key="_QD6CcCcxEemtP78Mp75tpg">
+        <value xmi:id="_QD_iAScxEemtP78Mp75tpg" x="470.0642" y="-98.15534"/>
+      </value>
+      <value xmi:id="_l_kBcCcxEemtP78Mp75tpg" key="_l_cssCcxEemtP78Mp75tpg">
+        <value xmi:id="_l_kBcScxEemtP78Mp75tpg" x="293.0642" y="442.50018"/>
+      </value>
+      <value xmi:id="_vFkjsCcxEemtP78Mp75tpg" key="_vFfEICcxEemtP78Mp75tpg">
+        <value xmi:id="_vFkjsScxEemtP78Mp75tpg" x="350.8554" y="566.66296"/>
+      </value>
+      <value xmi:id="_arCHQCczEemtP78Mp75tpg" key="_aq8nsCczEemtP78Mp75tpg">
+        <value xmi:id="_arCHQSczEemtP78Mp75tpg" x="690.50006" y="-81.26505"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

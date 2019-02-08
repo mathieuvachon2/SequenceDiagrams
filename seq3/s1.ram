@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_mTmx0CfAEemwP9QApBbahw" name="Untitled">
+  <coreConcern href="Seq3.core#_EPGKoCfAEemwP9QApBbahw"/>
+  <structuralView xmi:id="_mTmx0SfAEemwP9QApBbahw">
+    <classes xsi:type="ram:Class" xmi:id="_mTmx0ifAEemwP9QApBbahw" name="Game">
+      <operations xmi:id="_mTmx0yfAEemwP9QApBbahw" name="extinguishFire" extendedVisibility="private" returnType="_mTmx2yfAEemwP9QApBbahw">
+        <parameters xmi:id="_mTmx1CfAEemwP9QApBbahw" name="destination" type="_mTmx1SfAEemwP9QApBbahw"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_mTmx1SfAEemwP9QApBbahw" name="Tile">
+      <operations xmi:id="_mTmx1ifAEemwP9QApBbahw" name="getSpaceStatus" extendedVisibility="private" returnType="_mTnY5SfAEemwP9QApBbahw"/>
+      <operations xmi:id="_owGCYCfAEemwP9QApBbahw" name="getXPos" extendedVisibility="private" returnType="_mTmx3ifAEemwP9QApBbahw"/>
+      <operations xmi:id="_pv2PMCfAEemwP9QApBbahw" name="getYPos" extendedVisibility="private" returnType="_mTmx3ifAEemwP9QApBbahw"/>
+      <operations xmi:id="_uXZpICfAEemwP9QApBbahw" name="setSpaceStatus" extendedVisibility="private" returnType="_mTmx2yfAEemwP9QApBbahw">
+        <parameters xmi:id="_uXZpISfAEemwP9QApBbahw" name="status" type="_mTnY5SfAEemwP9QApBbahw"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_mTmx1yfAEemwP9QApBbahw" name="Player">
+      <operations xmi:id="_mTmx2CfAEemwP9QApBbahw" name="getAP" extendedVisibility="private" returnType="_mTmx3ifAEemwP9QApBbahw"/>
+      <operations xmi:id="_yqDKECfAEemwP9QApBbahw" name="setAP" extendedVisibility="private" returnType="_mTmx2yfAEemwP9QApBbahw">
+        <parameters xmi:id="_yqDKESfAEemwP9QApBbahw" name="newAP" type="_mTmx3ifAEemwP9QApBbahw"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_mTmx2SfAEemwP9QApBbahw" name="Firefighter">
+      <operations xmi:id="_mTmx2ifAEemwP9QApBbahw" name="getAP" extendedVisibility="private" returnType="_mTmx3ifAEemwP9QApBbahw"/>
+      <operations xmi:id="_1gXP4CfAEemwP9QApBbahw" name="setAP" extendedVisibility="private" returnType="_mTmx2yfAEemwP9QApBbahw">
+        <parameters xmi:id="_1gXP4SfAEemwP9QApBbahw" name="newAP" type="_mTmx3ifAEemwP9QApBbahw"/>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_mTmx2yfAEemwP9QApBbahw"/>
+    <types xsi:type="ram:RAny" xmi:id="_mTmx3CfAEemwP9QApBbahw"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_mTmx3SfAEemwP9QApBbahw"/>
+    <types xsi:type="ram:RInt" xmi:id="_mTmx3ifAEemwP9QApBbahw"/>
+    <types xsi:type="ram:RChar" xmi:id="_mTmx3yfAEemwP9QApBbahw"/>
+    <types xsi:type="ram:RString" xmi:id="_mTnY4CfAEemwP9QApBbahw"/>
+    <types xsi:type="ram:RDouble" xmi:id="_mTnY4SfAEemwP9QApBbahw"/>
+    <types xsi:type="ram:RFloat" xmi:id="_mTnY4ifAEemwP9QApBbahw"/>
+    <types xsi:type="ram:RLong" xmi:id="_mTnY4yfAEemwP9QApBbahw"/>
+    <types xsi:type="ram:RByte" xmi:id="_mTnY5CfAEemwP9QApBbahw"/>
+    <types xsi:type="ram:REnum" xmi:id="_mTnY5SfAEemwP9QApBbahw" name="SpaceStatus"/>
+  </structuralView>
+  <layout xmi:id="_mTnY5ifAEemwP9QApBbahw">
+    <containers xmi:id="_mTnY5yfAEemwP9QApBbahw" key="_mTmx0SfAEemwP9QApBbahw">
+      <value xmi:id="_mTnY6CfAEemwP9QApBbahw" key="_mTmx0ifAEemwP9QApBbahw">
+        <value xmi:id="_mTnY6SfAEemwP9QApBbahw" x="523.0001" y="305.0001"/>
+      </value>
+      <value xmi:id="_mTnY6ifAEemwP9QApBbahw" key="_mTmx1SfAEemwP9QApBbahw">
+        <value xmi:id="_mTnY6yfAEemwP9QApBbahw" x="456.99982" y="444.99194"/>
+      </value>
+      <value xmi:id="_mTnY7CfAEemwP9QApBbahw" key="_mTmx1yfAEemwP9QApBbahw">
+        <value xmi:id="_mTnY7SfAEemwP9QApBbahw" x="392.0" y="173.0"/>
+      </value>
+      <value xmi:id="_mTnY7ifAEemwP9QApBbahw" key="_mTmx2SfAEemwP9QApBbahw">
+        <value xmi:id="_mTnY7yfAEemwP9QApBbahw" x="656.0" y="175.0"/>
+      </value>
+      <value xmi:id="_mTnY8CfAEemwP9QApBbahw" key="_mTnY5SfAEemwP9QApBbahw">
+        <value xmi:id="_mTnY8SfAEemwP9QApBbahw" x="158.0" y="172.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

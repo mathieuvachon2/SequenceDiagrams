@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_-NUOYCe_EemwP9QApBbahw" name="Untitled">
+  <coreConcern href="Seq2.core#_XFihoCe_EemwP9QApBbahw"/>
+  <structuralView xmi:id="_-NUOYSe_EemwP9QApBbahw">
+    <classes xsi:type="ram:Class" xmi:id="_-NUOYie_EemwP9QApBbahw" name="Player">
+      <operations xmi:id="_-NUOYye_EemwP9QApBbahw" name="setFiremanStartingSpace" extendedVisibility="private" returnType="_-NUOaie_EemwP9QApBbahw">
+        <parameters xmi:id="_-NUOZCe_EemwP9QApBbahw" name="f" type="_-NUOZie_EemwP9QApBbahw"/>
+        <parameters xmi:id="_-NUOZSe_EemwP9QApBbahw" name="startTile" type="_-NUOaSe_EemwP9QApBbahw"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-NUOZie_EemwP9QApBbahw" name="Fireman">
+      <operations xmi:id="_-NUOZye_EemwP9QApBbahw" name="setStartSpace" extendedVisibility="private" returnType="_-NUOaie_EemwP9QApBbahw">
+        <parameters xmi:id="_-NUOaCe_EemwP9QApBbahw" name="startSpace" type="_-NUOaSe_EemwP9QApBbahw"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-NUOaSe_EemwP9QApBbahw" name="Tile"/>
+    <types xsi:type="ram:RVoid" xmi:id="_-NUOaie_EemwP9QApBbahw"/>
+    <types xsi:type="ram:RAny" xmi:id="_-NUOaye_EemwP9QApBbahw"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_-NUObCe_EemwP9QApBbahw"/>
+    <types xsi:type="ram:RInt" xmi:id="_-NUObSe_EemwP9QApBbahw"/>
+    <types xsi:type="ram:RChar" xmi:id="_-NUObie_EemwP9QApBbahw"/>
+    <types xsi:type="ram:RString" xmi:id="_-NUObye_EemwP9QApBbahw"/>
+    <types xsi:type="ram:RDouble" xmi:id="_-NUOcCe_EemwP9QApBbahw"/>
+    <types xsi:type="ram:RFloat" xmi:id="_-NUOcSe_EemwP9QApBbahw"/>
+    <types xsi:type="ram:RLong" xmi:id="_-NUOcie_EemwP9QApBbahw"/>
+    <types xsi:type="ram:RByte" xmi:id="_-NUOcye_EemwP9QApBbahw"/>
+  </structuralView>
+  <layout xmi:id="_-NUOdCe_EemwP9QApBbahw">
+    <containers xmi:id="_-NUOdSe_EemwP9QApBbahw" key="_-NUOYSe_EemwP9QApBbahw">
+      <value xmi:id="_-NUOdie_EemwP9QApBbahw" key="_-NUOYie_EemwP9QApBbahw">
+        <value xmi:id="_-NUOdye_EemwP9QApBbahw" x="128.00021" y="241.0528"/>
+      </value>
+      <value xmi:id="_-NUOeCe_EemwP9QApBbahw" key="_-NUOZie_EemwP9QApBbahw">
+        <value xmi:id="_-NUOeSe_EemwP9QApBbahw" x="700.0" y="241.00006"/>
+      </value>
+      <value xmi:id="_-NUOeie_EemwP9QApBbahw" key="_-NUOaSe_EemwP9QApBbahw">
+        <value xmi:id="_-NUOeye_EemwP9QApBbahw" x="632.0" y="99.99997"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>
