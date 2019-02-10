@@ -199,22 +199,20 @@
           <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_3Sx4kSsJEemMNsZlhtbgHg" covered="_pDiLoCsJEemMNsZlhtbgHg" message="_3Sx4kisJEemMNsZlhtbgHg"/>
           <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_wmauQisJEemMNsZlhtbgHg" body="spaceStatus == FIRE" language="java"/>
         </operands>
-      </fragments>
-      <fragments xsi:type="ram:CombinedFragment" xmi:id="_-cqsYCsJEemMNsZlhtbgHg" covered="_OBwAVysJEemMNsZlhtbgHg _pDiLoCsJEemMNsZlhtbgHg">
-        <operands xmi:id="_-cqsYSsJEemMNsZlhtbgHg">
-          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_BJKu4CsKEemMNsZlhtbgHg" covered="_OBwAVysJEemMNsZlhtbgHg" message="_BJKu4isKEemMNsZlhtbgHg"/>
-          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_BJKu4SsKEemMNsZlhtbgHg" covered="_pDiLoCsJEemMNsZlhtbgHg" message="_BJKu4isKEemMNsZlhtbgHg"/>
-          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_-cqsYisJEemMNsZlhtbgHg" body="spaceStatus == SMOKE" language="java"/>
+        <operands xmi:id="_BSFJYC1yEemXPM5Fq6oWIQ">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_CSs44C1yEemXPM5Fq6oWIQ" covered="_OBwAVysJEemMNsZlhtbgHg" message="_CSuuEC1yEemXPM5Fq6oWIQ"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_CSs44S1yEemXPM5Fq6oWIQ" covered="_pDiLoCsJEemMNsZlhtbgHg" message="_CSuuEC1yEemXPM5Fq6oWIQ"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_BSFJYS1yEemXPM5Fq6oWIQ" language="java"/>
         </operands>
       </fragments>
       <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_lPrDAysKEemMNsZlhtbgHg" covered="_OBwAVysJEemMNsZlhtbgHg" message="_lPrDBSsKEemMNsZlhtbgHg"/>
       <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_lPrDBCsKEemMNsZlhtbgHg" covered="_lPrDACsKEemMNsZlhtbgHg" message="_lPrDBSsKEemMNsZlhtbgHg"/>
       <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_OBwAVisJEemMNsZlhtbgHg" covered="_OBwAVysJEemMNsZlhtbgHg" message="_OBwAWSsJEemMNsZlhtbgHg"/>
-      <lifelines xmi:id="_OBwAVysJEemMNsZlhtbgHg" represents="_OBwAWisJEemMNsZlhtbgHg" coveredBy="_OBwAVSsJEemMNsZlhtbgHg _OBwAVisJEemMNsZlhtbgHg _dbejYysJEemMNsZlhtbgHg _pDiLoysJEemMNsZlhtbgHg _wmauQCsJEemMNsZlhtbgHg _3Sx4kCsJEemMNsZlhtbgHg _-cqsYCsJEemMNsZlhtbgHg _BJKu4CsKEemMNsZlhtbgHg _lPrDAysKEemMNsZlhtbgHg"/>
+      <lifelines xmi:id="_OBwAVysJEemMNsZlhtbgHg" represents="_OBwAWisJEemMNsZlhtbgHg" coveredBy="_OBwAVSsJEemMNsZlhtbgHg _OBwAVisJEemMNsZlhtbgHg _dbejYysJEemMNsZlhtbgHg _pDiLoysJEemMNsZlhtbgHg _wmauQCsJEemMNsZlhtbgHg _3Sx4kCsJEemMNsZlhtbgHg _lPrDAysKEemMNsZlhtbgHg _CSs44C1yEemXPM5Fq6oWIQ"/>
       <lifelines xmi:id="_dbejYCsJEemMNsZlhtbgHg" coveredBy="_dbejZCsJEemMNsZlhtbgHg">
         <represents xsi:type="ram:AssociationEnd" href="Reused_Association/Woven_Association_Association_LinkedList_Many_MaximumOrdered_MinimumOrdered_Plain.ram#_b--JNSsJEemMNsZlhtbgHg"/>
       </lifelines>
-      <lifelines xmi:id="_pDiLoCsJEemMNsZlhtbgHg" represents="_bikTRCsEEemMNsZlhtbgHg" coveredBy="_pDiLpCsJEemMNsZlhtbgHg _wmauQCsJEemMNsZlhtbgHg _3Sx4kSsJEemMNsZlhtbgHg _-cqsYCsJEemMNsZlhtbgHg _BJKu4SsKEemMNsZlhtbgHg"/>
+      <lifelines xmi:id="_pDiLoCsJEemMNsZlhtbgHg" represents="_bikTRCsEEemMNsZlhtbgHg" coveredBy="_pDiLpCsJEemMNsZlhtbgHg _wmauQCsJEemMNsZlhtbgHg _3Sx4kSsJEemMNsZlhtbgHg _CSs44S1yEemXPM5Fq6oWIQ"/>
       <lifelines xmi:id="_lPrDACsKEemMNsZlhtbgHg" represents="_fCdIQCsJEemMNsZlhtbgHg" coveredBy="_lPrDBCsKEemMNsZlhtbgHg"/>
       <messages xmi:id="_OBwAWCsJEemMNsZlhtbgHg" sendEvent="_OBwAWysJEemMNsZlhtbgHg" receiveEvent="_OBwAVSsJEemMNsZlhtbgHg" signature="_bikTQysEEemMNsZlhtbgHg">
         <localProperties xsi:type="ram:Reference" xmi:id="_fCdIQCsJEemMNsZlhtbgHg" name="currentFirefighter" lowerBound="1" type="_bikTRSsEEemMNsZlhtbgHg"/>
@@ -230,12 +228,12 @@
           <value xsi:type="ram:EnumLiteralValue" xmi:id="_6AyW8CsJEemMNsZlhtbgHg" value="_bikTXSsEEemMNsZlhtbgHg"/>
         </arguments>
       </messages>
-      <messages xmi:id="_BJKu4isKEemMNsZlhtbgHg" sendEvent="_BJKu4CsKEemMNsZlhtbgHg" receiveEvent="_BJKu4SsKEemMNsZlhtbgHg" signature="_bikTTisEEemMNsZlhtbgHg">
-        <arguments xmi:id="_BJKu4ysKEemMNsZlhtbgHg" parameter="_bikTTysEEemMNsZlhtbgHg">
-          <value xsi:type="ram:EnumLiteralValue" xmi:id="_CiyNMCsKEemMNsZlhtbgHg" value="_bikTXCsEEemMNsZlhtbgHg"/>
+      <messages xmi:id="_lPrDBSsKEemMNsZlhtbgHg" sendEvent="_lPrDAysKEemMNsZlhtbgHg" receiveEvent="_lPrDBCsKEemMNsZlhtbgHg" signature="_bikTRisEEemMNsZlhtbgHg"/>
+      <messages xmi:id="_CSuuEC1yEemXPM5Fq6oWIQ" sendEvent="_CSs44C1yEemXPM5Fq6oWIQ" receiveEvent="_CSs44S1yEemXPM5Fq6oWIQ" signature="_bikTTisEEemMNsZlhtbgHg">
+        <arguments xmi:id="_CSuuES1yEemXPM5Fq6oWIQ" parameter="_bikTTysEEemMNsZlhtbgHg">
+          <value xsi:type="ram:EnumLiteralValue" xmi:id="_Ey16YC1yEemXPM5Fq6oWIQ" value="_bikTXCsEEemMNsZlhtbgHg"/>
         </arguments>
       </messages>
-      <messages xmi:id="_lPrDBSsKEemMNsZlhtbgHg" sendEvent="_lPrDAysKEemMNsZlhtbgHg" receiveEvent="_lPrDBCsKEemMNsZlhtbgHg" signature="_bikTRisEEemMNsZlhtbgHg"/>
       <properties xmi:id="_OBwAWisJEemMNsZlhtbgHg" name="target" lowerBound="1" type="_bikTQisEEemMNsZlhtbgHg"/>
       <formalGates xmi:id="_OBwAWysJEemMNsZlhtbgHg" message="_OBwAWCsJEemMNsZlhtbgHg" name="in_extinguishFire"/>
       <formalGates xmi:id="_OBwAXCsJEemMNsZlhtbgHg" message="_OBwAWSsJEemMNsZlhtbgHg" name="out_extinguishFire"/>
@@ -274,7 +272,7 @@
     <specification xmi:id="_7xV5JCsKEemMNsZlhtbgHg">
       <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_7xV5JSsKEemMNsZlhtbgHg" covered="_7xV5JysKEemMNsZlhtbgHg" message="_7xV5KCsKEemMNsZlhtbgHg"/>
       <fragments xsi:type="ram:AssignmentStatement" xmi:id="_9OGyECsKEemMNsZlhtbgHg" covered="_7xV5JysKEemMNsZlhtbgHg" assignTo="_bikTSSsEEemMNsZlhtbgHg">
-        <value xsi:type="ram:OpaqueExpression" xmi:id="_9OGyESsKEemMNsZlhtbgHg" body="apPoints - 2" language="java"/>
+        <value xsi:type="ram:OpaqueExpression" xmi:id="_9OGyESsKEemMNsZlhtbgHg" body="apPoints - 1" language="java"/>
       </fragments>
       <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_7xV5JisKEemMNsZlhtbgHg" covered="_7xV5JysKEemMNsZlhtbgHg" message="_7xV5KSsKEemMNsZlhtbgHg"/>
       <lifelines xmi:id="_7xV5JysKEemMNsZlhtbgHg" represents="_7xV5KisKEemMNsZlhtbgHg" coveredBy="_7xV5JSsKEemMNsZlhtbgHg _7xV5JisKEemMNsZlhtbgHg _9OGyECsKEemMNsZlhtbgHg"/>
@@ -294,10 +292,10 @@
         <value xmi:id="_bikTZCsEEemMNsZlhtbgHg" x="399.9995" y="133.00009"/>
       </value>
       <value xmi:id="_bikTZSsEEemMNsZlhtbgHg" key="_bikTRSsEEemMNsZlhtbgHg">
-        <value xmi:id="_bikTZisEEemMNsZlhtbgHg" x="1162.9995" y="126.00009"/>
+        <value xmi:id="_bikTZisEEemMNsZlhtbgHg" x="932.5664" y="126.00009"/>
       </value>
       <value xmi:id="_bikTZysEEemMNsZlhtbgHg" key="_bikTSisEEemMNsZlhtbgHg">
-        <value xmi:id="_bikTaCsEEemMNsZlhtbgHg" x="694.0" y="341.0"/>
+        <value xmi:id="_bikTaCsEEemMNsZlhtbgHg" x="704.5704" y="488.9843"/>
       </value>
     </containers>
     <containers xmi:id="_OBwAUCsJEemMNsZlhtbgHg" key="_OBwAUysJEemMNsZlhtbgHg">
