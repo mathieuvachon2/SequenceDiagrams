@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <help_text/>
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>8</x>
+      <y>32</y>
+      <w>232</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Player
+--
+~ PlayerStatus playerStatus
+--
+- create()
++ setStatus(PlayerStatus status)
++ setFiremanStartSpace(Fireman f, Space s)
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>432</x>
+      <y>0</y>
+      <w>312</w>
+      <h>352</h>
+    </coordinates>
+    <panel_attributes>GameManager
+--
+~ int redDice
+~ int blackDice
+~ final int HEIGHT 
+~ final int WIDTH
+~ int numVictimSaved
+~ int numDamageLeft
+~ int numOfDesiredPlayers
+~ GameKind rules
+~ GameState state
+--
++ createNewFamilyGame(int numPlayers)
++ continueFunction()
++ chopWall(Wall w)
+- decrementDamageLeft()
++ move(Space destination)
+- verifyVictimRescueStatus(Space dest)
++ endTurn()
++ initialFireSpread()
++ explosion(int i, int j)
++ updateSmoke()
++ Space[] getSpacesWithFire()
++ updateVictimAndFirefighter(Space[] spaceList)
++ removeEdgeFire()
++ explosionObstacleDirection(Space location, Direction d)
++ explosionFireSpread(int i, int j, Direction d)
++ continueExplosionObDir(Space s, Direction d, Obstacle o)
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1024</x>
+      <y>672</y>
+      <w>224</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Door
+--
+~ DoorStatus state
+--
++ createDoor(Space[] adjSpaces)
++ setDoorStatus(DoorStatus status)
++ DoorStatus getDoorStatus()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>672</y>
+      <w>272</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Wall
+--
+~ WallStatus status
+--
++ createWall(Space[] adjSpaces, WallStatus status)
++ damageWall()
++ WallStatus getWallStatus()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>888</x>
+      <y>88</y>
+      <w>296</w>
+      <h>344</h>
+    </coordinates>
+    <panel_attributes>Space
+--
+~ FireStatus fstatus
+~ SpaceKind kind
+~ SpaceStatus status
+~ int XPos
+~ int YPos
+--
++ Space createNewSpace(SpaceKind kind, int x, int  y)
+- connectSpaceToNeighb()
+- setNextPlacementRelationship()
+- boolean addMyObstacle(Obstacle o)
++ boolean hasPOI()
++ boolean hasRealVictim()
++ boolean hasFire()
++ boolean hasNoFireAndSmoke()
++ boolean hasSmoke()
++ setNullVictim()
++ setFireStatus(FireStatus fStatus)
++ Victim getVictim()
++ SpaceKind getKind()
++ SpaceStatus getStatus()
++ setSpaceStatus(SpaceStatus status)
++ Obstacle getObstacle(Direction d)
++ int getX()
++ int getY()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>64</x>
+      <y>808</y>
+      <w>80</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+PlayerStatus
+--
+Offline
+InGame
+Ready
+Available
+NotReady
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>328</x>
+      <y>808</y>
+      <w>144</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+GameState
+--
+ReadyToJoin
+Placing
+MainGame
+KnockedDownPlacement
+Completed
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>432</x>
+      <y>392</y>
+      <w>200</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>Victim
+--
+~ boolean falseAlarm
+~ Victim status
+~ boolean isPOIRevealed
+--
++ Space getVictimOn()
++ boolean isRevealed()
++ revealPOI()
++ boolean isFalseAlarm()
++ setVictimState(VictimStatus vState)
++ createVictim()
++ createFalseAlarm()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>808</y>
+      <w>56</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+Color
+--
+Yellow
+Blue
+Red
+Green
+White
+Orange
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>840</x>
+      <y>904</y>
+      <w>64</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+Direction
+--
+TOP
+DOWN
+LEFT 
+RIGHT
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>496</x>
+      <y>912</y>
+      <w>88</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+DoorStatus
+--
+Open
+Closed
+Destroyed
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>496</x>
+      <y>808</y>
+      <w>72</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+WallStatus
+--
+Intact
+Damaged
+Destroyed
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>928</y>
+      <w>80</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+POI
+--
+Hidden
+Revealed
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>808</y>
+      <w>80</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+VictimStatus
+--
+Unconscious
+Treated
+Rescued
+Lost
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>728</x>
+      <y>888</y>
+      <w>80</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+SpaceStatus
+--
+Safe
+Smoke
+Fire
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>728</x>
+      <y>808</y>
+      <w>80</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+SpaceKind
+--
+Indoor
+Outdoor
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>232</x>
+      <y>808</y>
+      <w>80</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+GameKind
+--
+Family 
+Experienced
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>728</x>
+      <y>568</y>
+      <w>216</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>ParkingSpace
+--
+--
++ createParkingSpot(Space[] adjSpaces)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>256</y>
+      <w>240</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>Fireman
+--
+~ int apPts
+~ GameKind kind
+~ Color color
+--
++ createFireman(GameKind kind, Color color)
++ setFiremanSpace(Space space)
++ extinguishAP()
++ chopRemoveAp()
++ moveAP()
++ moveWithVictimAP()
++ Victim getMovingVictim()
++ resetActionPts()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>944</x>
+      <y>808</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;impl&gt;&gt;
+Math
+--
++ double random()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>840</x>
+      <y>808</y>
+      <w>80</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+ObstacleType
+--
+Door
+Wall 
+None
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1064</x>
+      <y>528</y>
+      <w>160</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Obstacle
+--
+~ ObstacleType oType
+~ int health
+--
++ ObstacleType getType()
++ boolean isDestroyed()
++ applyDamage()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1088</x>
+      <y>616</y>
+      <w>24</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>640</y>
+      <w>248</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;290.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>640</y>
+      <w>24</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>896</x>
+      <y>424</y>
+      <w>168</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;&gt;
+
+
+
+
+
+
+
+myParkingSpace 0..1 {frozen}</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>736</x>
+      <y>144</y>
+      <w>168</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-&gt;
+m2=tileList 80 {frozen}</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1120</x>
+      <y>424</y>
+      <w>152</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;&gt;
+
+
+
+
+myObstacles 0..4 {frozen}</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>232</x>
+      <y>272</y>
+      <w>216</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;&gt;
+m1=myFireman 3..6 {frozen}</panel_attributes>
+    <additional_attributes>10.0;10.0;250.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>112</x>
+      <y>112</y>
+      <w>88</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+
+
+
+
+myFireman 1</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>232</x>
+      <y>360</y>
+      <w>672</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=myFireman 3..6</panel_attributes>
+    <additional_attributes>10.0;10.0;820.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>232</x>
+      <y>408</y>
+      <w>216</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=carriedVictim</panel_attributes>
+    <additional_attributes>10.0;10.0;250.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>624</x>
+      <y>400</y>
+      <w>280</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;&gt;
+m1=myVictim 0..1
+</panel_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>232</x>
+      <y>96</y>
+      <w>216</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;&gt;
+m1=myFirstPlayer 0..1</panel_attributes>
+    <additional_attributes>10.0;10.0;250.0;10.0</additional_attributes>
+  </element>
+</diagram>
