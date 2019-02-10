@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_EPGKoCfAEemwP9QApBbahw" name="Seq3">
-  <models xsi:type="core:COREFeatureModel" href="#_EPGKoSfAEemwP9QApBbahw"/>
-  <models xsi:type="ram:Aspect" href="s1.ram#_mTmx0CfAEemwP9QApBbahw"/>
-  <featureModel xmi:id="_EPGKoSfAEemwP9QApBbahw" coreConcern="_EPGKoCfAEemwP9QApBbahw" root="_EPGKoifAEemwP9QApBbahw">
-    <features xmi:id="_EPGKoifAEemwP9QApBbahw" name="Seq3"/>
-  </featureModel>
-</core:COREConcern>
