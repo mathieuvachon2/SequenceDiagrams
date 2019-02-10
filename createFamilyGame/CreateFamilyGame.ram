@@ -519,8 +519,10 @@
       </fragments>
       <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_x35OIC2DEemNL6voXLKYlA" covered="_0zsnBC16EemNL6voXLKYlA" message="_x384gC2DEemNL6voXLKYlA"/>
       <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_x35OIS2DEemNL6voXLKYlA" covered="_0zsnBC16EemNL6voXLKYlA" message="_x384gC2DEemNL6voXLKYlA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_7MeMUC2NEemVkuFs3IlIvA" covered="_0zsnBC16EemNL6voXLKYlA" message="_7Mh2sC2NEemVkuFs3IlIvA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_7MezYC2NEemVkuFs3IlIvA" covered="_0zsnBC16EemNL6voXLKYlA" message="_7Mh2sC2NEemVkuFs3IlIvA"/>
       <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_0zsnAy16EemNL6voXLKYlA" covered="_0zsnBC16EemNL6voXLKYlA" message="_0zsnBi16EemNL6voXLKYlA"/>
-      <lifelines xmi:id="_0zsnBC16EemNL6voXLKYlA" represents="_0zsnBy16EemNL6voXLKYlA" coveredBy="_0zsnAi16EemNL6voXLKYlA _0zsnAy16EemNL6voXLKYlA _1dNeEC16EemNL6voXLKYlA _5AeJcC16EemNL6voXLKYlA _KV7j8C18EemNL6voXLKYlA _q1b8MC18EemNL6voXLKYlA _xI1z8C18EemNL6voXLKYlA _4OExQC18EemNL6voXLKYlA _8FS6cC18EemNL6voXLKYlA _ALQqQC19EemNL6voXLKYlA _CUJCUC19EemNL6voXLKYlA _x35OIC2DEemNL6voXLKYlA _x35OIS2DEemNL6voXLKYlA"/>
+      <lifelines xmi:id="_0zsnBC16EemNL6voXLKYlA" represents="_0zsnBy16EemNL6voXLKYlA" coveredBy="_0zsnAi16EemNL6voXLKYlA _0zsnAy16EemNL6voXLKYlA _1dNeEC16EemNL6voXLKYlA _5AeJcC16EemNL6voXLKYlA _KV7j8C18EemNL6voXLKYlA _q1b8MC18EemNL6voXLKYlA _xI1z8C18EemNL6voXLKYlA _4OExQC18EemNL6voXLKYlA _8FS6cC18EemNL6voXLKYlA _ALQqQC19EemNL6voXLKYlA _CUJCUC19EemNL6voXLKYlA _x35OIC2DEemNL6voXLKYlA _x35OIS2DEemNL6voXLKYlA _7MeMUC2NEemVkuFs3IlIvA _7MezYC2NEemVkuFs3IlIvA"/>
       <lifelines xmi:id="_4N_RsS18EemNL6voXLKYlA" represents="_4N_RsC18EemNL6voXLKYlA" coveredBy="_1dNeEC16EemNL6voXLKYlA _5AeJcC16EemNL6voXLKYlA _KV7j8C18EemNL6voXLKYlA _4OExQS18EemNL6voXLKYlA"/>
       <lifelines xmi:id="_8FKXkS18EemNL6voXLKYlA" represents="_8FKXkC18EemNL6voXLKYlA" coveredBy="_1dNeEC16EemNL6voXLKYlA _5AeJcC16EemNL6voXLKYlA _KV7j8C18EemNL6voXLKYlA _8FS6cS18EemNL6voXLKYlA"/>
       <lifelines xmi:id="_ALIucC19EemNL6voXLKYlA" coveredBy="_1dNeEC16EemNL6voXLKYlA _5AeJcC16EemNL6voXLKYlA _KV7j8C18EemNL6voXLKYlA _ALQqQS19EemNL6voXLKYlA _CUJCUS19EemNL6voXLKYlA">
@@ -570,6 +572,7 @@
         </arguments>
       </messages>
       <messages xmi:id="_x384gC2DEemNL6voXLKYlA" sendEvent="_x35OIC2DEemNL6voXLKYlA" receiveEvent="_x35OIS2DEemNL6voXLKYlA" signature="_tYbZMC2DEemNL6voXLKYlA"/>
+      <messages xmi:id="_7Mh2sC2NEemVkuFs3IlIvA" sendEvent="_7MeMUC2NEemVkuFs3IlIvA" receiveEvent="_7MezYC2NEemVkuFs3IlIvA" signature="_J-YW4C2NEem0i9dVTGnUrQ"/>
       <properties xmi:id="_0zsnBy16EemNL6voXLKYlA" name="target" lowerBound="1" type="_qrvxhS14EemNL6voXLKYlA"/>
       <formalGates xmi:id="_0zsnCC16EemNL6voXLKYlA" message="_0zsnBS16EemNL6voXLKYlA" name="in_setFamilyBoard"/>
       <formalGates xmi:id="_0zsnCS16EemNL6voXLKYlA" message="_0zsnBi16EemNL6voXLKYlA" name="out_setFamilyBoard"/>
