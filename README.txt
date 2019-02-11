@@ -1,5 +1,8 @@
 Notes on the sequence diagrams:
 
+To know what fireman or player sent the request we used a linklist and made it so that the first element of that list must
+be the instance of player or fireman to which the request originated form.
+
 At certain points, we had to modify data structures to make sure we could do the correct operations on TouchCore.
 An example of that is that Space has a HashMap of the Obstacles in all 4 Directions and the key is the
 Direction enum. TouchCore would not accept an enum as a key so we simplified it and used String direction instead. 
